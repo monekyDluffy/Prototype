@@ -9,5 +9,12 @@
 #import "Dot.h"
 
 @implementation Dot
-
+@synthesize size = size_,color = color_;
+-(instancetype)copyWithZone:(NSZone *)zone
+{
+    Dot  *dotCopy = [[Dot class]allocWithZone:zone];
+    [dotCopy setColor:[UIColor colorWithCGColor:color_.CGColor ]];
+    [dotCopy setSize:size_];
+    return dotCopy;
+}
 @end

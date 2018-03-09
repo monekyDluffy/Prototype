@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A9F6B3520521E9E00738AD7 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F6B3420521E9E00738AD7 /* Stroke.m */; };
 		8AADADDB20511FC400FE8DC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADADDA20511FC400FE8DC2 /* AppDelegate.m */; };
 		8AADADDE20511FC400FE8DC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADADDD20511FC400FE8DC2 /* ViewController.m */; };
 		8AADADE120511FC400FE8DC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AADADDF20511FC400FE8DC2 /* Main.storyboard */; };
 		8AADADE320511FC400FE8DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AADADE220511FC400FE8DC2 /* Assets.xcassets */; };
 		8AADADE620511FC400FE8DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AADADE420511FC400FE8DC2 /* LaunchScreen.storyboard */; };
 		8AADADE920511FC400FE8DC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADADE820511FC400FE8DC2 /* main.m */; };
+		8AADADF42051245C00FE8DC2 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADADF32051245C00FE8DC2 /* Vertex.m */; };
+		8AADADF7205138A000FE8DC2 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AADADF6205138A000FE8DC2 /* Dot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A9F6B3320521E9E00738AD7 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		8A9F6B3420521E9E00738AD7 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		8AADADD620511FC400FE8DC2 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AADADD920511FC400FE8DC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AADADDA20511FC400FE8DC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,11 @@
 		8AADADE520511FC400FE8DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AADADE720511FC400FE8DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AADADE820511FC400FE8DC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AADADEF2051210300FE8DC2 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		8AADADF22051245C00FE8DC2 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		8AADADF32051245C00FE8DC2 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		8AADADF5205138A000FE8DC2 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		8AADADF6205138A000FE8DC2 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,13 @@
 				8AADADDA20511FC400FE8DC2 /* AppDelegate.m */,
 				8AADADDC20511FC400FE8DC2 /* ViewController.h */,
 				8AADADDD20511FC400FE8DC2 /* ViewController.m */,
+				8AADADEF2051210300FE8DC2 /* Mark.h */,
+				8AADADF22051245C00FE8DC2 /* Vertex.h */,
+				8AADADF32051245C00FE8DC2 /* Vertex.m */,
+				8AADADF5205138A000FE8DC2 /* Dot.h */,
+				8AADADF6205138A000FE8DC2 /* Dot.m */,
+				8A9F6B3320521E9E00738AD7 /* Stroke.h */,
+				8A9F6B3420521E9E00738AD7 /* Stroke.m */,
 				8AADADDF20511FC400FE8DC2 /* Main.storyboard */,
 				8AADADE220511FC400FE8DC2 /* Assets.xcassets */,
 				8AADADE420511FC400FE8DC2 /* LaunchScreen.storyboard */,
@@ -102,7 +119,7 @@
 				TargetAttributes = {
 					8AADADD520511FC400FE8DC2 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -143,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AADADDE20511FC400FE8DC2 /* ViewController.m in Sources */,
+				8AADADF42051245C00FE8DC2 /* Vertex.m in Sources */,
 				8AADADE920511FC400FE8DC2 /* main.m in Sources */,
+				8AADADF7205138A000FE8DC2 /* Dot.m in Sources */,
 				8AADADDB20511FC400FE8DC2 /* AppDelegate.m in Sources */,
+				8A9F6B3520521E9E00738AD7 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +298,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F27SH835DK;
 				INFOPLIST_FILE = Prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Prototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "43bad7b7-09c8-418f-b32a-2c9f58b71ca6";
+				PROVISIONING_PROFILE_SPECIFIER = TestPofile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -291,11 +315,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = F27SH835DK;
 				INFOPLIST_FILE = Prototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Prototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "43bad7b7-09c8-418f-b32a-2c9f58b71ca6";
+				PROVISIONING_PROFILE_SPECIFIER = TestPofile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
